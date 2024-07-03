@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.restaurant-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 200px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.titre {
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script';
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.burger-menu .line {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #3B414C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.menu-content a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-content a:hover {
+    background-color: #575d69;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    margin-top: 3%;
+    margin-left: 83%;
+    z-index: 1;
+}
+
+
+.menu-button {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #3b414cc0;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Ajoute un bord arrondi */
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Ajoute des transitions pour l'effet au survol */
+    position: relative; /* Permet de positionner le bouton */
+    z-index: 100;
+}
+
+.menu-button:hover {
+    background-color: #575d69;
+    transform: scale(1.5); /* Augmente légèrement la taille au survol */
+}
