@@ -27,7 +27,23 @@
     </header>
     <main>
         <button class="back-button" onclick="window.history.back()">Retour</button>
+        <button id="theme-toggle" onclick="toggleTheme()">Mode Jour</button>
+
+        
         <!-- Contenu de votre site ici -->
     </main>
+    <div class="categories">
+        <button id="btn-entrees">Entrées</button>
+        <button id="btn-plats">Plats</button>
+        <button id="btn-desserts">Desserts</button>
+    </div>
+
+    <div class="menu">
+        <ul id="liste-plats">
+            <!-- Ici seront affichés les éléments de la catégorie sélectionnée -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

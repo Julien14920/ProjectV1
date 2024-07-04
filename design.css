@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #3B414C;
 }
 
 header {
@@ -35,7 +36,10 @@ header {
     object-fit: fill;
 }
 
-
+.light-theme {
+    background-color: #ffffff; /* Couleur de fond pour le mode nuit */
+    color: #000000; /* Couleur de texte pour le mode nuit */
+}
 
 
 
@@ -108,3 +112,56 @@ header {
     margin-left: 91%;
     z-index: 1;
 }
+
+
+
+
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+.categories button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.liste-plats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.plat-container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plat-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.plat-container h3 {
+    margin-top: 10px;
+}
+
+/* Styles spécifiques pour chaque type de plat */
+.entree { border-color: #FFD700; }
+.dessert { border-color: #FF6347; }
