@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Restaurant</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <title>Le petit bistrot</title>
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
 </head>
 <body>
-    <main>
-        <div class="content">
-            <h1 class="restaurant-name">Le Petit Bistrot</h1>
-            <button class="back-button" onclick="window.history.back()">Retour</button>
+    <header>
+        <img src="photoequipe.jpg" alt="Photo de mon restaurant" class="background-image">
+        <div class="social-links">
+            <a href="https://www.instagram.com/juwake14/" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+            <a href="https://www.facebook.com/julien.hee.7" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.google.com" target="_blank"><img src="googleicon.png" alt="Google"></a>
+            <a href="https://www.tripadvisor.fr/Restaurant_Review-g1939770-d4586740-Reviews-Au_Pere_Tranquille-Bernieres_sur_Mer_Calvados_Basse_Normandie_Normandy.html" target="_blank"><img src="tripadvisor.png" alt="Tripadvisor"></a>
         </div>
+        <div class="burger-menu" id="burgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <span class="titre">
+            Le Petit Bistrot
+        </span>
+    </header>
+    <main>
+        <button class="back-button" onclick="window.history.back()">Retour</button>
+        <!-- Contenu de votre site ici -->
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
