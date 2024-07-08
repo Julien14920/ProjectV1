@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     display: flex;
@@ -29,6 +29,9 @@ header {
     color: rgb(255, 255, 255);
     font-family: 'Dancing Script';
     z-index: 1;
+    position: absolute;
+    margin-bottom: 49%;
+    margin-left: 15%;
 }
 
 .background-image {
@@ -48,6 +51,7 @@ header {
 
 .burger-menu {
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -55,6 +59,7 @@ header {
     cursor: pointer;
     margin: 20px;
     z-index: 2;
+    margin-bottom: 53%;
 }
 
 .burger-menu .line {
@@ -109,10 +114,10 @@ header {
 .social-links {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     margin-top: 3%;
-    margin-left: 91%;
+    margin-left: 83%;
     z-index: 3;
 }
 
@@ -168,3 +173,5 @@ header {
 /* Styles spécifiques pour chaque type de plat */
 .entree { border-color: #FFD700; }
 .dessert { border-color: #FF6347; }
+
+
