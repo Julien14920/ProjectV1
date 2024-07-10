@@ -4,45 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le petit bistrot</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="designtest.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
 </head>
 <body>
     <header>
-        <img src="photoequipe.jpg" alt="Photo de mon restaurant" class="background-image">
+        <div class="burger-menu" id="burgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu-content" id="menuContent">
+            <span class="close-btn" id="closeBtn">&times;</span>    
+        </div>
+        <span class="titre">
+            Le Petit Bistrot
+        </span>
         <div class="social-links">
             <a href="https://www.instagram.com/juwake14/" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
             <a href="https://www.facebook.com/julien.hee.7" target="_blank"><img src="facebook.png" alt="Facebook"></a>
             <a href="https://www.google.com" target="_blank"><img src="googleicon.png" alt="Google"></a>
             <a href="https://www.tripadvisor.fr/Restaurant_Review-g1939770-d4586740-Reviews-Au_Pere_Tranquille-Bernieres_sur_Mer_Calvados_Basse_Normandie_Normandy.html" target="_blank"><img src="tripadvisor.png" alt="Tripadvisor"></a>
         </div>
-        <div class="burger-menu" id="burgerMenu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <span class="titre">
-            Le Petit Bistrot
-        </span>
-        <div class="categories">
-            <button id="btn-entrees">Entrées</button>
-            <button id="btn-plats">Plats</button>
-            <button id="btn-desserts">Desserts</button>
-        </div>
+        <img src="photoequipe.jpg" alt="Photo de mon restaurant" class="background-image">
     </header>
-    <main>
-        <button class="back-button" onclick="window.history.back()">Retour</button>
-        <button id="theme-toggle" onclick="toggleTheme()">Mode Jour</button>
-        
-        
-        <!-- Contenu de votre site ici -->
-    </main>
-    
-    <div class="menu">
-        <ul id="liste-plats">
-            <!-- Ici seront affichés les éléments de la catégorie sélectionnée -->
-        </ul>
+
+
+    <p id="description-text">Bienvenue dans notre restaurant, le Petit Bistrot. Ici, tout nos plats sont fait maison et avec amour par notre chef Julien. Vous retrouverez tout nos plats ainsi que les allergènes plus bas. <br>
+        Bonne dégustation à vous ! 
+    </p>
+
+    <div class="separator">
+        <p>___________________________________________</p>
     </div>
+
+    <div class="button-container">
+        <button onclick="filterCategory('all')" class="category-button">All</button>
+        <button onclick="filterCategory('Planches')" class="category-button">Planches</button>
+        <button onclick="filterCategory('Tapas')" class="category-button">Tapas</button>
+        <button onclick="filterCategory('Entrées')" class="category-button">Entrées</button>
+        <button onclick="filterCategory('Plats')" class="category-button">Plats</button>
+        <button onclick="filterCategory('Desserts')" class="category-button">Desserts</button>
+        <button onclick="filterCategory('Cocktails')" class="category-button">Cocktails</button>
+    </div>
+
+        <div id="product-container">
+            <div class="card" data-category="Planches">
+                <img src="plateau-charcuterie-1.jpg" alt="Produit 1" class="product-image">
+                <div class="content">
+                    <h2>Plateau Charcuterie</h2>
+                    <p>Magnifique planche de charcuterie avec chorizo, saucissons, jambons de bayonne et cornichons</p>
+                </div>
+                <div class="footer">
+                    <div class="allergen-dropdown">
+                        <button class="dropbtn">Allergènes</button>
+                        <div class="dropdown-content">
+                            <a href="#">Lait</a>
+                            <a href="#">Œufs</a>
+                        </div>
+                    </div>
+                    <p class="price">€5,00</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="Tapas">
+                <img src="onion rings sauce barbecue.jpg" alt="Produit 1" class="product-image">
+                <div class="content">
+                    <h2>Onion Rings</h2>
+                    <p>8 Pièces de délicieux onion rings à partager (ou non)</p>
+                </div>
+                <div class="footer">
+                    <div class="allergen-dropdown">
+                        <button class="dropbtn">Allergènes</button>
+                        <div class="dropdown-content">
+                            <a href="#">Lait</a>
+                            <a href="#">Œufs</a>
+                        </div>
+                    </div>
+                    <p class="price">€5,00</p>
+                </div>
+            </div>
+
+
+
+
+    
+    
+    
+    
+
+
     <script src="script.js"></script>
 </body>
 </html>

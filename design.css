@@ -13,41 +13,46 @@ body {
     background-color: #3B414C;
 }
 
-header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    padding: 0px 20px;
-    background-color: rgba(255, 255, 255, 0);
-    z-index: 2;
-}
-
-.titre {
-    font-size: 1.4em;
-    color: rgb(255, 255, 255);
-    font-family: 'Dancing Script';
-    z-index: 1;
-    position: absolute;
-    margin-bottom: 49%;
-    margin-left: 15%;
-}
-
 .background-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     z-index: 0;
 }
 
-.light-theme {
-    background-color: #ffffff; /* Couleur de fond pour le mode nuit */
-    color: #000000; /* Couleur de texte pour le mode nuit */
+header {
+    width: 100%;
+    align-items: center;
+    top: 0;
+    position: absolute;
 }
 
 
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10%;
+}
 
+.social-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-top: 2%;
+    margin-right: 2%;
+
+}
+
+.titre {
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script';
+    position: absolute;
+    left: 0;
+    margin-top: 3%;
+    margin-left: 15%;
+} 
 
 .burger-menu {
     display: flex;
@@ -56,10 +61,9 @@ header {
     justify-content: space-between;
     width: 30px;
     height: 22px;
-    cursor: pointer;
-    margin: 20px;
-    z-index: 2;
-    margin-bottom: 53%;
+    left: 0;
+    margin-top: 4%;
+    margin-left: 4%;
 }
 
 .burger-menu .line {
@@ -104,74 +108,155 @@ header {
     cursor: pointer;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 15%;
-    z-index: 3;
+#description-text {
+    padding: 20px;
+    font-size: 18px;
+    color: #e2e2e2;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    word-spacing: 1px;
+    margin-bottom: 58%;
 }
 
-.social-links {
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne automatique */
+    gap: 20px; /* Espacement entre les cartes */
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    width: 385px;
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+    margin: 16px;
+    left: 0;
+    padding: 16px;
     position: absolute;
-    top: 0;
-    margin-top: 3%;
-    margin-left: 83%;
-    z-index: 3;
+
 }
 
-
-
-
-
-
-.categories {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    position: fixed;
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
-.categories button {
-    padding: 10px 20px;
-    margin: 0 10px;
+.content {
+    flex-grow: 1;
+    padding: 16px 0;
+}
+
+.content h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.content p {
+    margin: 0;
     font-size: 16px;
-    cursor: pointer;
-    position: relative ;
+    color: #666;
 }
 
-.menu {
+.footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.liste-plats {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+.allergen-dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.plat-container {
-    border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.plat-container img {
-    max-width: 100%;
-    border-radius: 5px;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
 }
 
-.plat-container h3 {
-    margin-top: 10px;
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-/* Styles spécifiques pour chaque type de plat */
-.entree { border-color: #FFD700; }
-.dessert { border-color: #FF6347; }
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.allergen-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+}
 
 
+
+/* Styles pour les boutons */
+.button-container {
+    text-align: center; /* Centrer les boutons horizontalement */
+    position: absolute;
+    margin-bottom: 10%;
+}
+
+.button-container button {
+    background-color: #f8f8f8; /* Couleur de fond verte */
+    color: rgb(92, 92, 92); /* Couleur du texte blanc */
+    border: none; /* Suppression de la bordure */
+    text-align: center; /* Centrage du texte */
+    display: inline-block; /* Afficher en ligne */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 8px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s ease; /* Transition fluide de couleur de fond */
+    font-family: "Roboto";
+    font-weight: 500;
+    width: 80px;
+    margin: 2px;
+}
+
+
+.button-container button:hover {
+    background-color: #a1a1a1; /* Couleur de fond verte plus foncée au survol */
+}
+
+.separator {
+    position: absolute;
+    margin-bottom: 30%;
+    font-size: 18px;
+    color: rgb(235, 235, 235);
+}
