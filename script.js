@@ -59,3 +59,10 @@ buttons.forEach(function(button) {
         filterCategory(category); // Appelle la fonction de filtrage avec la catégorie sélectionnée
     });
 });
+
+
+function goBack() {
+    window.history.back();
+}
+
+
