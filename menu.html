@@ -30,70 +30,63 @@
         <img src="photoequipe.jpg" alt="Photo de mon restaurant" class="background-image">
     </header>
 
-
-    <p id="description-text">Bienvenue dans notre restaurant, le Petit Bistrot. Ici, tout nos plats sont fait maison et avec amour par notre chef Julien. Vous retrouverez tout nos plats ainsi que les allergènes plus bas. <br>
-        Bonne dégustation à vous ! 
-    </p>
-
-    <div class="separator">
-        <p>___________________________________________</p>
-    </div>
-
-    <div class="button-container">
-        <button onclick="filterCategory('all')" class="category-button">All</button>
-        <button onclick="filterCategory('Planches')" class="category-button">Planches</button>
-        <button onclick="filterCategory('Tapas')" class="category-button">Tapas</button>
-        <button onclick="filterCategory('Entrées')" class="category-button">Entrées</button>
-        <button onclick="filterCategory('Plats')" class="category-button">Plats</button>
-        <button onclick="filterCategory('Desserts')" class="category-button">Desserts</button>
-        <button onclick="filterCategory('Cocktails')" class="category-button">Cocktails</button>
-    </div>
-
-        <div id="product-container">
-            <div class="card" data-category="Planches">
-                <img src="plateau-charcuterie-1.jpg" alt="Produit 1" class="product-image">
-                <div class="content">
-                    <h2>Plateau Charcuterie</h2>
-                    <p>Magnifique planche de charcuterie avec chorizo, saucissons, jambons de bayonne et cornichons</p>
-                </div>
-                <div class="footer">
-                    <div class="allergen-dropdown">
-                        <button class="dropbtn">Allergènes</button>
-                        <div class="dropdown-content">
-                            <a href="#">Lait</a>
-                            <a href="#">Œufs</a>
-                        </div>
+    <main>
+        <p id="description-text">Bienvenue dans notre restaurant, le Petit Bistrot. Ici, tout nos plats sont fait maison et avec amour par notre chef Julien. Vous retrouverez tout nos plats ainsi que les allergènes plus bas. <br>
+            Bonne dégustation à vous ! 
+        </p>
+    
+        <div class="separator">
+            <p>___________________________________________</p>
+        </div>
+    
+        <div class="button-container">
+            <button onclick="filterCategory('all')" class="category-button">All</button>
+            <button onclick="filterCategory('Planches')" class="category-button">Planches</button>
+            <button onclick="filterCategory('Tapas')" class="category-button">Tapas</button>
+            <button onclick="filterCategory('Entrées')" class="category-button">Entrées</button>
+            <button onclick="filterCategory('Plats')" class="category-button">Plats</button>
+            <button onclick="filterCategory('Desserts')" class="category-button">Desserts</button>
+            <button onclick="filterCategory('Cocktails')" class="category-button">Cocktails</button>
+        </div>
+    
+            <div id="product-container">
+                <div class="card" data-category="Planches">
+                    <img src="plateau-charcuterie-1.jpg" alt="Produit 1" class="product-image">
+                    <div class="content">
+                        <h2>Plateau Charcuterie</h2>
+                        <p>Magnifique planche de charcuterie avec chorizo, saucissons, jambons de bayonne et cornichons</p>
                     </div>
-                    <p class="price">€5,00</p>
-                </div>
-            </div>
-
-            <div class="card" data-category="Tapas">
-                <img src="onion rings sauce barbecue.jpg" alt="Produit 1" class="product-image">
-                <div class="content">
-                    <h2>Onion Rings</h2>
-                    <p>8 Pièces de délicieux onion rings à partager (ou non)</p>
-                </div>
-                <div class="footer">
-                    <div class="allergen-dropdown">
-                        <button class="dropbtn">Allergènes</button>
-                        <div class="dropdown-content">
-                            <a href="#">Lait</a>
-                            <a href="#">Œufs</a>
+                    <div class="footer">
+                        <div class="allergen-dropdown">
+                            <button class="dropbtn">Allergènes</button>
+                            <div class="dropdown-content">
+                                <a href="#">Lait</a>
+                                <a href="#">Œufs</a>
+                            </div>
                         </div>
+                        <p class="price">€5,00</p>
                     </div>
-                    <p class="price">€5,00</p>
                 </div>
-            </div>
-
-
-
-
     
+                <div class="card" data-category="Tapas">
+                    <img src="onion rings sauce barbecue.jpg" alt="Produit 1" class="product-image">
+                    <div class="content">
+                        <h2>Onion Rings</h2>
+                        <p>8 Pièces de délicieux onion rings à partager (ou non)</p>
+                    </div>
+                    <div class="footer">
+                        <div class="allergen-dropdown">
+                            <button class="dropbtn">Allergènes</button>
+                            <div class="dropdown-content">
+                                <a href="#">Lait</a>
+                                <a href="#">Œufs</a>
+                            </div>
+                        </div>
+                        <p class="price">€5,00</p>
+                    </div>
+                </div>
+    </main>
     
-    
-    
-
 
     <script src="script.js"></script>
 </body>
