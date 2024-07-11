@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100svh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,10 +20,11 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    align-items: center;
-    top: 0;
-    position: absolute;
+    background-image: url("Restaurant/photoequipe.jpg");
+    background-size: cover;
 }
 
 
@@ -37,8 +38,6 @@ header {
 .social-links {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 0;
     margin-top: 2%;
     margin-right: 2%;
 
@@ -48,18 +47,14 @@ header {
     font-size: 1.6em;
     color: rgb(255, 255, 255);
     font-family: 'Dancing Script';
-    position: absolute;
-    left: 0;
     margin-top: 3%;
-    margin-left: 15%;
+    margin-right: 35%;
 } 
 
 #backButton{
     display: flex;
-    position: absolute;
     width: 30px;
     height: 40px;
-    left: 0;
     margin-top: 3%;
     margin-left: 4%;
 }
@@ -107,7 +102,6 @@ header {
 } */
 
 .intro{
-    margin-bottom: 15svh;
 }
 
 .intro::after{
@@ -127,11 +121,6 @@ header {
     padding: 20px;
     line-height: 1.1;
     word-spacing: 1px;
-}
-    
-
-main{
-    height: 30svh;
 }
 
 /* #description-text{
@@ -174,22 +163,14 @@ main{
     background-color: #a1a1a1; /* Couleur de fond verte plus foncée au survol */
 }
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap; /* Permet le retour à la ligne automatique */
-    gap: 20px; /* Espacement entre les cartes */
-    flex-direction: column;
-}
-
 .card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;    
-    width: 40svh;
-    height: 41svh;
+    width: 80%;
+    height:60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 16px;
-    left: 0;
     padding: 16px;
 }
 
@@ -219,7 +200,7 @@ main{
 .price span{
     font-size: 18px;
     color: #333;
-    margin-left: 33svh;
+    margin-left: 33lvh;
 }
 
 
