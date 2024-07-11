@@ -158,14 +158,14 @@ main{
     border: none; /* Suppression de la bordure */
     text-align: center; /* Centrage du texte */
     display: inline-block; /* Afficher en ligne */
-    font-size: 16px; /* Taille de la police */
+    font-size: 15px; /* Taille de la police */
     border-radius: 8px; /* Bordure arrondie */
     cursor: pointer; /* Curseur pointeur */
     transition: background-color 0.3s ease; /* Transition fluide de couleur de fond */
     font-family: "Roboto";
     font-weight: 500;
-    width: 80px;
-    margin: 2px;
+    width: 82px;
+    margin: 3px;
 }
 
 
@@ -184,8 +184,8 @@ main{
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;    
-    width: 38svh;
-    height: 36svh;
+    width: 40svh;
+    height: 41svh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 16px;
     left: 0;
