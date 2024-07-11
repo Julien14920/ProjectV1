@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100svh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ header {
 } */
 
 .intro{
-    margin-bottom: 15vh;
+    margin-bottom: 15svh;
 }
 
 .intro::after{
@@ -128,9 +128,10 @@ header {
     line-height: 1.1;
     word-spacing: 1px;
 }
+    
 
 main{
-    height: 30vh;
+    height: 30svh;
 }
 
 /* #description-text{
@@ -218,7 +219,7 @@ main{
 .price span{
     font-size: 18px;
     color: #333;
-    margin-left: 33vh;
+    margin-left: 33svh;
 }
 
 
